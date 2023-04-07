@@ -19,8 +19,8 @@ body {
   display: flex;
   justify-content: space-around;
   color: black;
-  font-weight: bold;
-  font-family: 'Catamaran', sans-serif;
+  font-weight: 500;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .teams {
@@ -76,15 +76,21 @@ img {
   width: 150px;
   padding: 8px 15px;
   margin: 10px auto;
-  border: none;
+  /* border: none; */
   background-color: #6a994e;
   color: white;
   font-size: 22px;
   border-radius: 4px;
 }
 
+.stats-title {
+  padding: 5px;
+  margin-bottom: -5px;
+  color: #232528;
+}
+
 .stats {
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .stats-btns {
@@ -95,11 +101,15 @@ img {
 
 .stats-btns button {
   margin: 0 10px 0 10px;
-  border-style: none;
+  /* border-style: none; */
   background-color: #1a254a;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
+}
+
+.stats-btns button:hover {
+  background-color: #ad2831;
 }
 
 #new-game {
@@ -108,4 +118,9 @@ img {
   font-size: 50px;
   padding: 10px 25px;
   margin: 20px auto;
+}
+
+
+#new-game:hover {
+  background-color: #6a994e;
 }

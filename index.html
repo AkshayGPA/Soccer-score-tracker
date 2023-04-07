@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   
@@ -20,19 +20,22 @@
         <img id="logo-ManUtd" src="Images/Man Utd.png" alt="Manchester United's logo">
       </div>
       <div class="score-disp" id="ManUtd-score">0</div>
-      <button class="goal-btn" id="ManUtd-goal">Goal ⚽</button>
+      <button class="goal-btn" id="ManUtd-goal" onclick="MU_score()">Goal ⚽</button>
+      
+      <h2 class="stats-title">Game Stats</h2>
+      
       <div class="stats">
-        <p id="ManUtd-foul">Fouls:</p>
-        <p id="ManUtd-corner">Corners:</p>
-        <p id="ManUtd-freeKick">Free Kicks:</p>
-        <p id="ManUtd-pen">Penalties:</p>
+        <p>Fouls:<span id="ManUtd-foul"> 0</span></p>
+        <p>Corners:<span id="ManUtd-corner">0</span></p>
+        <p>Free Kicks:<span id="ManUtd-freeKick">0</span></p>
+        <p>Penalties:<span id="ManUtd-pen">0</span></p>
       </div>
 
       <div class="stats-btns">
-        <button class="foul-btn">Foul</button>
-        <button class="corner-btn">Corner</button>
-        <button class="freeKick-btn">Free Kick</button>
-        <button class="pen-btn">Penalty</button>
+        <button class="foul-btn" onclick="MU_foul()">Foul</button>
+        <button class="corner-btn" onclick="MU_corner()">Corner</button>
+        <button class="freeKick-btn" onclick="MU_freeKick()">Free Kick</button>
+        <button class="pen-btn" onclick="MU_pen()">Penalty</button>
       </div>
     </div>
     
@@ -42,23 +45,26 @@
         <img id="logo-Arsenal" src="Images/Arsenal.png" alt="Arsenal logo">
       </div>
       <div class="score-disp" id="Arsenal-score">0</div>
-      <button class="goal-btn" id="Arsenal-goal">Goal ⚽</button>
+      <button class="goal-btn" id="Arsenal-goal" onclick="Ars_score()">Goal ⚽</button>
+      
+      <h2 class="stats-title">Game Stats</h2>
+
       <div class="stats">
-        <p id="Ars-foul">Fouls:</p>
-        <p id="Ars-corner">Corners:</p>
-        <p id="Ars-freeKick">Free Kicks:</p>
-        <p id="Ars-pen">Penalties:</p>
+        <p>Fouls:<span id="Ars-foul">0</span></p>
+        <p>Corners:<span id="Ars-corner">0</span></p>
+        <p>Free Kicks:<span id="Ars-freeKick">0</span></p>
+        <p>Penalties:<span id="Ars-pen">0</span></p>
       </div>
 
       <div class="stats-btns">
-        <button class="foul-btn">Foul</button>
-        <button class="corner-btn">Corner</button>
-        <button class="freeKick-btn">Free Kick</button>
-        <button class="pen-btn">Penalty</button>
+        <button class="foul-btn" onclick="Ars_foul()">Foul</button>
+        <button class="corner-btn" onclick="Ars_corner()">Corner</button>
+        <button class="freeKick-btn" onclick="Ars_freeKick()">Free Kick</button>
+        <button class="pen-btn" onclick="Ars_pen()">Penalty</button>
       </div>
     </div>
   </div>
-  <button id="new-game">New Game</button>
+  <button id="new-game" onclick="new_game()">New Game</button>
   <script src="script.js"></script>
 </body>
 </html>
