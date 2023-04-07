@@ -1,0 +1,111 @@
+@font-face {
+  src: url("CursedTimerUlil-Aznm.ttf");
+  font-family: Cursed_Timer;
+}
+
+@font-face {
+  src: url("Commodore-64-v6.3.TTF");
+  font-family: Commodore;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background-color: #001d3d;
+  padding: 20px;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-weight: bold;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 15px;
+  border: 3px solid #240046;
+  margin: 20px 0;
+  background-color: #ffd8be;
+  border-radius: 10px;
+  /* justify-content: space-around; */
+}
+
+.team-name-logo {
+  display: flex;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: Cursed_Timer, sans-serif;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+
+  margin-top: 20px;
+  /* padding: 0 0 0 0px; */
+}
+
+#logo-Arsenal {
+  width: 150px;
+}
+
+.score-disp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 150px;
+  background-color: black;
+  margin: 10px auto;
+  border-radius: 10px;
+  color: white;
+  font-size: 90px;
+  font-family: Cursed_Timer, sans-serif;
+  color: #c9184a;
+}
+
+.goal-btn {
+  /* height: 30px; */
+  width: 150px;
+  padding: 8px 15px;
+  margin: 10px auto;
+  border: none;
+  background-color: #6a994e;
+  color: white;
+  font-size: 22px;
+  border-radius: 4px;
+}
+
+.stats {
+  margin: 20px 0;
+}
+
+.stats-btns {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.stats-btns button {
+  margin: 0 10px 0 10px;
+  border-style: none;
+  background-color: #1a254a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#new-game {
+  display: block;
+  font-family: Commodore, serif;
+  font-size: 50px;
+  padding: 10px 25px;
+  margin: 20px auto;
+}
